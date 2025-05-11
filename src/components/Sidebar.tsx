@@ -8,6 +8,7 @@ import {
   FaTachometerAlt,
   FaWrench,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -17,19 +18,25 @@ const Sidebar = () => {
           Dashboard
         </h1>
       </div>
-      <div className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#EDEDED]/[0.3]">
+      <Link
+        to="/"
+        className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#EDEDED]/[0.3]"
+      >
         <FaTachometerAlt color="white" />
         <p className="text-white leading-[20px] font-bold text-[14px]">
           Dashboard
         </p>
-      </div>
+      </Link>
       {/* menu 1 */}
       <div className="pt-[15px] border-b-[1px] border-[#EDEDED]/[0.3]">
         <p className="text-white/[0.4] text-[10px] font-extrabold leading-[16px] text-uppercase">
           INTERFACE
         </p>
         {/* menu item 1 */}
-        <div className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer">
+        <Link
+          to="/"
+          className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer"
+        >
           <div className="flex items-center gap-[10px]">
             <FaRegSun color="white" />
             <p className="text-white text-[14px] leading-[20px] font-normal ">
@@ -38,9 +45,12 @@ const Sidebar = () => {
             <FaChevronRight color="white" />
             <p></p>
           </div>
-        </div>
+        </Link>
         {/* menu item 2 */}
-        <div className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer">
+        <Link
+          to="/"
+          className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer"
+        >
           <div className="flex items-center gap-[10px]">
             <FaWrench color="white" />
             <p className="text-white text-[14px] leading-[20px] font-normal ">
@@ -49,7 +59,7 @@ const Sidebar = () => {
             <FaChevronRight color="white" />
             <p></p>
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* menu 2 */}
@@ -58,7 +68,10 @@ const Sidebar = () => {
           ADDONS
         </p>
         {/* menu item 1 */}
-        <div className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer">
+        <Link
+          to="/"
+          className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer"
+        >
           <div className="flex items-center gap-[10px]">
             <FaStickyNote color="white" />
             <p className="text-white text-[14px] leading-[20px] font-normal ">
@@ -67,9 +80,12 @@ const Sidebar = () => {
             <FaChevronRight color="white" />
             <p></p>
           </div>
-        </div>
+        </Link>
         {/* menu item 2 */}
-        <div className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer">
+        <Link
+          to="/"
+          className="flex items-center justify-between gap-[10px] py-[15px] cursor-pointer"
+        >
           <div className="flex items-center gap-[10px]">
             <FaRegChartBar color="white" />
             <p className="text-white text-[14px] leading-[20px] font-normal ">
@@ -78,13 +94,16 @@ const Sidebar = () => {
             <FaChevronRight color="white" />
             <p></p>
           </div>
-        </div>
-        <div className="flex items-center gap-[10px] py-[15px] cursor-pointer">
+        </Link>
+        <Link
+          to="/"
+          className="flex items-center gap-[10px] py-[15px] cursor-pointer"
+        >
           <FaCalendarAlt color="white" />
           <p className="text-white text-[14px] leading-[20px] font-normal ">
             Tables
           </p>
-        </div>
+        </Link>
       </div>
       {/* arrow left */}
       <div className="flex items-center justify-center pt-[15px]">
