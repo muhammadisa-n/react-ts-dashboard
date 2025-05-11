@@ -64,7 +64,7 @@ export default function Dashboard() {
           <h1 className="text-[#5a5c89] text-[28px] leading-[34px] font-normal cursor-pointer">
             Dashboard
           </h1>
-          <button className="bg-blue-500 h-[32px] rounded-[3px] text-white flex items-center justify-center px-[30px] cursor-pointer">
+          <button className="bg-blue-500 h-[32px] rounded-[3px] text-white flex items-center justify-center px-[30px] cursor-pointer dark:bg-blue-950">
             Generate Report
           </button>
         </div>
