@@ -9,7 +9,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       <div className="basis-[12%] h-[100vh]">
         <Sidebar />
       </div>
-      <div className="basis-[88%] border">
+      <div className="basis-[88%]  h-[100vh] overflow-scroll">
         <Topbar />
         {children}
       </div>

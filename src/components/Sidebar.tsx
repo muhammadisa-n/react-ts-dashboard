@@ -1,6 +1,5 @@
 import {
   FaCalendarAlt,
-  FaChevronLeft,
   FaChevronRight,
   FaRegChartBar,
   FaRegSun,
@@ -14,7 +13,7 @@ const Sidebar = () => {
     <div className="bg-blue-500 h-screen px-[25px]">
       <div className="px-[15px] py-[30px] flex items-center justify-center border-b-[1px] border-[#EDEDED]/[0.3]">
         <h1 className="text-white text-[20px] leading-[24px] font-extrabold cursor-pointer">
-          GateOne
+          Dashboard
         </h1>
       </div>
       <div className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#EDEDED]/[0.3]">
@@ -84,17 +83,14 @@ const Sidebar = () => {
           <p className="text-white text-[14px] leading-[20px] font-normal ">
             Tables
           </p>
-          {/* <FaChevronRight color="white" /> */}
-          <p></p>
         </div>
       </div>
       {/* arrow left */}
-      <div className="flex items-center justify-center pt-[15px]">
+      {/* <div className="flex items-center justify-center pt-[15px]">
         <div className="h-[40px] w-[40px] bg-[#3C5EC1] rounded-full flex items-center justify-center cursor-pointer ">
           <FaChevronLeft color="white" />
         </div>
-      </div>
-      <div></div>
+      </div> */}
     </div>
   );
 };
